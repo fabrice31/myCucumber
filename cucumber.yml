@@ -1,0 +1,9 @@
+default: -r features --tags ~@wip --color --format pretty --format html -o results.html --format junit -o junit lang=en
+
+
+# language
+fr: lang=fr
+en: lang=en
+
+# debug
+debug : -r features --tags ~@wip --color --format usage --format html -o results.html --format junit -o junit lang=en

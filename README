@@ -5,6 +5,7 @@ Get this repo, and make your own scenarios
 To use it, you need ruby, and some gems:
 gem install watir-webdriver
 gem install cucumber
+gem install rspec
 
 And to see beautiful code in results :
 gem install syntax

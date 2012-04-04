@@ -1,61 +1,50 @@
 # List of english text used in text
 # order by alphabetic
 if ($LANG == 'en')
-  def translate(str)
-    case str
+  TRANSLATEARRAY = {
     ############################
     # Message errors
     ############################
-    when 'error.not_allowed'
-      'You are not allowed to acces this page.'
+    'error.articlenotexist' => 'This post does not exist',
 
     ############################
     # Menu
     ############################
-    when 'menu.publish'
-      'Publish'
+    'menu.publish'      => 'Publish',
 
     ############################
     # Text buttons
     ############################
-    when 'button.save'
-      'Save'
+    'button.save'           => 'Save',
 
     ############################
     # Text links
     ############################
-    when 'link.admin'
-      'Admin'
-    when 'link.login'
-      'Log in'
-    when 'link.logout'
-      'Log out'
-    when 'link.publish'
-      'Publish'
-    when 'link.select'
-      'Select'
-    when 'link.set'
-      'Set'
-    when 'link.upload'
-      'Upload'
-
+    'link.admin'      => 'Admin',
+    'link.login'      => 'Log in',
+    'link.logout'     => 'Log out',
+    'link.publish'    => 'Publish',
+    'link.select'     => 'Select',
+    'link.set'        => 'Set',
+    'link.upload'     => 'Upload',
 
     ############################
     # Special text
     ############################
-    when 'site.title'
-      'myCucumber'
+    'site.title'            => 'Overblog',
 
     ############################
     # Other text
     ############################
-    when 'text.howto'
-      'How to start a cucumber project ?'
+    'text.howto'		=> 'How to start a cucumber project ?'
+	}
 
-
-    else
-      puts "Translation of #{str} not found"
+  def translate(str)
+    if (!TRANSLATEARRAY[str])
+      puts "Translation of #{str} not found in EN"
       return str
+    else
+      return TRANSLATEARRAY[str]
     end
   end
 end

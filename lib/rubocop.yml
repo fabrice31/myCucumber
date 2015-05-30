@@ -1,0 +1,99 @@
+AllCops:
+  Include:
+    - support/*.rb
+    - support/pages/*.rb
+    - features/step_definitions/*.rb
+
+
+Lint/Eval:
+  Enabled: false
+
+Lint/Void:
+  Enabled: false
+
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Max: 5
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 512
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+
+
+Style/AccessorMethodName:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/CommentIndentation:
+  Enabled: false
+
+Style/EmptyLines:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+Style/For:
+  Enabled: false
+
+Style/GuardClause: 
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/IndentHash:
+  Enabled: false
+
+Style/IndentArray:
+  Enabled: false
+
+Style/IndentationWidth:
+  Enabled: false
+
+Style/MethodCallParentheses:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/ParenthesesAroundCondition:
+  Enabled: false  
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/Tab:
+  Enabled: false
+
+Style/TrailingWhitespace:
+  Enabled: true
+
+Style/WhileUntilModifier:
+  Enabled: false

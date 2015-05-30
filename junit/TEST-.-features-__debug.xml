@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" name="Debug Information" skipped="0" tests="2" time="8.109463">
-<testcase classname="Debug Information.Show information" name="Show information" time="0.142008">
-</testcase>
-<testcase classname="Debug Information.debug" name="debug" time="7.967455">
-</testcase>
-</testsuite>

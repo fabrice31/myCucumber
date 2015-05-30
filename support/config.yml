@@ -1,0 +1,24 @@
+--- #Account list
+accounts:
+# all account used for test purpose
+# alphabetic order
+  admin:
+    email: fabrice@test.net
+    password: test1234
+
+# account with no existence
+  space_pwd:
+    email: fabrice@test.net
+    password: "test1234 "
+  uppercase_email:
+    email: Fabrice@test.net
+    password: "test1234"
+  uppercase_pwd:
+    email: fabrice@test.net
+    password: "Test1234"
+  wrong_email:
+    email: fabrice@test.fr
+    password: "test1234 "
+  wrong_password:
+    email: fabrice@test.net
+    password: test123456

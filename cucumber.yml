@@ -1,9 +1,20 @@
-default: -r features --tags ~@wip --color --format pretty --format html -o results.html --format junit -o junit lang=en
+<% common = "--strict -r support -r features -r support/pages --tags ~@wip --color --format pretty" %>
+<% export = "--format html -o results.html --format junit -o junit" %>
 
 
-# language
-fr: lang=fr
-en: lang=en
+# Not allow old browser instance
+default: <%= common %> BROWSER=ch ENV=testing
+kill: KILL=true
+rerun: --format rerun --out rerun.txt <%= export %>
+second_run: --format html -o results_rerun.html --format junit -o junit rerun=true
 
-# debug
-debug : -r features --tags ~@wip --color --format usage --format html -o results.html --format junit -o junit lang=en
+
+# staging - multiple browser choice
+ie: <%= common %> BROWSER=ie --tags ~@not_ie
+ff: <%= common %> BROWSER=ff --tags ~@not_ff
+ch: <%= common %> BROWSER=ch --tags ~@not_ch
+
+
+# environement shouldn't be pass by ENV=value
+testing: 	ENV=testing
+prod: 		ENV=prod 	--tags ~@not_prod

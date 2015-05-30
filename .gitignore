@@ -1,0 +1,7 @@
+﻿*.lock
+junit*
+*.log
+rerun*.txt
+
+*result*.html
+screen/*
